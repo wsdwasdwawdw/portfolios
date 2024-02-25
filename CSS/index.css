@@ -15,7 +15,9 @@ header{
     align-items: center;
     padding: 50px 0; 
 }
-
+header .menu{
+    display: none;
+}
 header h1{
     font-size: 32px;
 }
@@ -251,4 +253,6 @@ h1{
 h3{
     color: gray;
 }
-
+.burger{
+    display: none;
+}

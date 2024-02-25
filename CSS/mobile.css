@@ -1,38 +1,93 @@
 /* MEDIA QUERIES */
 
-@media (max-width: 720px){
+@media (max-width: 375px){
     
-    
+    header{
+        padding: 20px 0; 
+    }
+    header .menu{
+        display: block;
+    }
     header h1{
-        font-size: 25px;
+        font-size: 16px;
+    }
+    header ul{
+        display: none;
     }
     
-    header ul li a{
+    /* BURGER SECTION */
+    .burger{
+        display: flex;
+        position: fixed;
+        top: 20px;
+        right: -100px;
+        transition: .1s;
+        background-color: white;
+    }
+
+    .burger ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .burger ul li{
+        list-style-type: none;
+    }
+    .burger ul li a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    /* INTRO SECTION */
+    .intro .pfp{
+        width: 150px;
+        margin: 0;
+    }
+    
+    .intro h1, h2{
         font-size: 20px;
     }
-    
-    /* INTRO SECTION */
-    
-    .intro .pfp{
-        width: 250px;
+    .intro .des{
+        text-align: center;
+        max-width: 200px;
     }
-   
-    /* ABOUT SECTION */
     
+    
+    /* ABOUT SECTION */
+    .about{
+        padding: 0 20px;
+    }
+    
+
     .about img{
         display: none;
+    }
+    .about .inner-des p {
+        font-size: 14px;
+    }
+    .about .inner-des .exp .years{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .about i{
+        font-size: 20px;
     }
     
     /* EXPERIENCE SECTION */
     
+    .experience .contents{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
     .experience .frontend, .backend{
         height: 300px;
         width: 300px;
-        font-size: 16px;
     }
     
     .experience .tools{
-        font-size: 24px;
+        font-size: 20px;
     }
     
     /* PROJECTS SECTION */
@@ -41,36 +96,41 @@
     }
     
     .projects img{
-        width: 350px;
+        width: 250px;
+        height: 330px;
     }
     .projects .contents{
-        margin: 40px 0 0 0;
-        text-align: center;
-        display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
     }
     .projects .contents .one,.two,.three{
-        border: solid gray 1px;
-        border-radius: 20px;
-        height: 600px;
-        width: 450px;
-        margin: 0 20px;
+        height: 500px;
+        width: 300px;
     }
     
-    .projects button{
-        background-color: transparent;
-        padding: 10px 20px;
-        border-radius: 20px;
-        transition: .5s;
+    
+    
+    
+    /* CONTACT SECTION */
+
+    .contact .contents{
+        height: 50px;
+        font-size: 16px;
     }
     
-    .projects button:hover{
-        background-color: gray;
-        color: white;
-    }
-  
+    /* FOOTER SECTION */
     
+    footer{
+        height: 100px;
+    }
+    
+    footer ul li a{
+        font-size: 16px;
+    }
+
+    footer p{
+        text-align: center;
+    }
     /* UNIVERSAL STYLING */
     
     h1{
@@ -78,5 +138,10 @@
     }
     h3{
         color: gray;
+    }
+    button:hover{
+        background-color: gray;
+        color: white;
+        cursor: pointer;
     }
 }
