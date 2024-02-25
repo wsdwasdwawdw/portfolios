@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="header">
+        <a href=""><img src="img/logo.png" class="logo" alt=""></a>
+        
+        <div>
+            <ul class="navbar">
+                <span class="x">X</span>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a class="active" href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+        <div class="mobile">
+            <i class="fas fa-outdent" id="bar"></i>
+        </div>
+    </section>
+
+    <div class="small-container">
+        <h2>- Cart -</h2>
+    </div>    
+    <section class="products">
+        <section class="main"></section>
+        <section class="Checkout">
+            <h4 class="total">Total: </h4>
+            <button onclick="calculate()">Calculate</button>
+            <button onclick="checkout()">Checkout</button>
+        </section>
+    </section>
+
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

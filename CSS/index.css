@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0; 
+}
+
+header h1{
+    font-size: 32px;
+}
+header ul{
+    display: flex;
+}
+
+header ul li{
+    list-style: none;
+    margin: 0 10px;
+    font-size: 25px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* INTRO SECTION */
+.intro{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro .pfp{
+    margin: 0 100px 0 0;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.intro .des{
+    text-align: center;
+    max-width: fit-content;
+}
+
+.intro button{
+    padding: 15px 20px;
+    border: solid 2px gray;
+    border-radius: 50px;
+    background-color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.intro button:hover{
+    background-color: gray;
+    color: white;
+}
+
+/* ABOUT SECTION */
+.about{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.about img{
+    width: 500px;
+    margin: 0 100px 0 0;
+}
+.about .des{
+    display: flex;
+    margin: 50px 0 0 0;
+    justify-content: center;
+    align-items: center;
+}
+.about .inner-des p {
+    text-align: justify;
+    max-width: 800px;
+    margin: 5% 0 0 0;
+    font-size: 20px;
+}
+.about .inner-des .exp{
+    border: solid gray 1px;
+    border-radius: 20px;
+    padding: 30px 0;
+}
+.about .inner-des .exp .years{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 0 0;
+}
+.about .inner-des .exp .years div{
+    width: 150px;
+}
+.about i{
+    font-size: 25px;
+    margin: 0 0 5px 0;
+}
+
+/* EXPERIENCE SECTION */
+.experience{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.experience .contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 0 0;
+}
+
+.experience .frontend, .backend{
+    text-align: center;
+    border: solid 1px gray;
+    border-radius: 40px;
+    height: 500px;
+    width: 500px;
+    margin: 0 20px;
+    padding: 20px 0;
+}
+
+.experience .tools{
+    text-align: left;
+    font-size: 28px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 0 0 20px;
+}
+
+.experience .tools span{
+    color: gray
+}
+
+/* PROJECTS SECTION */
+.projects{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects img{
+    width: 400px;
+    margin: 20px 0;
+    border-radius: 20px;
+    border: solid gray 1px;
+}
+.projects .contents{
+    margin: 40px 0 0 0;
+    text-align: center;
+    display: flex;
+}
+.projects .contents .one,.two,.three{
+    border: solid gray 1px;
+    padding: 20px 0;
+    border-radius: 20px;
+    height: 700px;
+    width: 450px;
+    margin: 0 20px;
+}
+
+.projects button{
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: .5s;
+    margin: 10px 0;
+}
+
+.projects button:hover{
+    background-color: gray;
+    color: white;
+}
+
+
+/* CONTACT SECTION */
+.contact{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .contents{
+    border: solid gray 2px;
+    width: fit-content;
+    border-radius: 40px;
+    padding: 0 20px;
+    height: 100px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+/* FOOTER SECTION */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+    color: gray;
+}
+
+footer ul{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    font-size: 32px;
+    color: black
+}
+
+/* UNIVERSAL STYLING */
+
+h1{
+    font-size: 60px;
+}
+h3{
+    color: gray;
+}
+

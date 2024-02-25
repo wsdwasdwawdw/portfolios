@@ -1,0 +1,82 @@
+/* MEDIA QUERIES */
+
+@media (max-width: 720px){
+    
+    
+    header h1{
+        font-size: 25px;
+    }
+    
+    header ul li a{
+        font-size: 20px;
+    }
+    
+    /* INTRO SECTION */
+    
+    .intro .pfp{
+        width: 250px;
+    }
+   
+    /* ABOUT SECTION */
+    
+    .about img{
+        display: none;
+    }
+    
+    /* EXPERIENCE SECTION */
+    
+    .experience .frontend, .backend{
+        height: 300px;
+        width: 300px;
+        font-size: 16px;
+    }
+    
+    .experience .tools{
+        font-size: 24px;
+    }
+    
+    /* PROJECTS SECTION */
+    .projects{
+        height: fit-content;
+    }
+    
+    .projects img{
+        width: 350px;
+    }
+    .projects .contents{
+        margin: 40px 0 0 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .projects .contents .one,.two,.three{
+        border: solid gray 1px;
+        border-radius: 20px;
+        height: 600px;
+        width: 450px;
+        margin: 0 20px;
+    }
+    
+    .projects button{
+        background-color: transparent;
+        padding: 10px 20px;
+        border-radius: 20px;
+        transition: .5s;
+    }
+    
+    .projects button:hover{
+        background-color: gray;
+        color: white;
+    }
+  
+    
+    /* UNIVERSAL STYLING */
+    
+    h1{
+        font-size: 30px;
+    }
+    h3{
+        color: gray;
+    }
+}
