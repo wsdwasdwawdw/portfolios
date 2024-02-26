@@ -1,6 +1,6 @@
 /* MEDIA QUERIES */
 
-@media (max-width: 375px){
+@media (max-width: 1000px){
     
     header{
         padding: 20px 0; 
